@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tildagon Flasher</title>
+    <meta name="viewport" content="width=device-width" />
+
+    <script type="module" src="https://unpkg.com/esp-web-tools@10.0.1/dist/web/install-button.js?module"></script>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Provision a Tildagon</h1>
+      <li>1. Power off the badge from the menu, if it's already powered on.</li>
+      <li>2. Hold <b>boop</b> while plugging USB into <b>USB in</b>.</li>
+      <li>3. Keep holding <b>boop</b> until you click <b>Connect</b> and click on the badge COM port. The device name should appears as <code>USB JTAG/serial debug unit</code></li>
+      <li>4. Let go of the <b>boop</b></li>
+      <li>5. Select <b>Install Tildagon</b>, and wait.</li>
+      <p>For more information, see <a href="https://tildagon.badge.emfcamp.org/using-the-badge/flash-the-badge/">Flash the badge</a>.</p>
+      <br>
+      <esp-web-install-button
+        manifest="manifest.json"></esp-web-install-button>
+      
+    </div>
+  </body>
+</html>
